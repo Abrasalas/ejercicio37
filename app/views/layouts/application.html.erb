@@ -58,7 +58,10 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li>
+        	<% link_to "Pag3", pags_pag3_path %>
+        </li>
+        <!-- <li><a href="#">Link</a></li> -->
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -74,6 +77,9 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-    <%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
+    
   </body>
 </html>
